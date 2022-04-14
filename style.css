@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+.outer-contatiner {
+    display: flex;
+    border-bottom: 8px solid #222;
+    height: 75vh;
+}
+.container {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between; 
+}
+.card-img-container {
+    height: 100%;
+    display: flex;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+.card-text h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.card-text h2 {
+    font-size: 30px;
+}
+.card-animation {
+    position: absolute;
+    left: 20%;
+    bottom: 8%;
+    align-items: center;
+    width: 60%;
+    border: 2px solid rgba(255, 255, 255, .25);
+    border-radius: 10px;
+    display: flex;
+    height: 80px;
+    padding: 5px 8px;
+    background-color: black;
+
+}
+.card-animation-image {
+    margin: 0 1em 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.card-animation-image img {
+    height: 60px;
+}
+.animation-container {
+    position: relative;
+    align-items: center;
+}
+.card-animation-text {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.download-icon {
+    height: 40px;
+    width: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.text-0 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px 0;
+    letter-spacing: 3px;
+}
+.text-1 {
+    color: blue;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        display: block;
+    }
+    .outer-contatiner {
+        height: 90vh;
+    }
+}
